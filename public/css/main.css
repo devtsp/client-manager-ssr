@@ -1,0 +1,9 @@
+h6 {
+  color: blueviolet;
+}
+
+#home-table tbody tr > * {
+  line-height: 2.5;
+  padding: 4px 8px;
+}
+/*# sourceMappingURL=main.css.map */
