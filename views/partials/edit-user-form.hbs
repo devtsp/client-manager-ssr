@@ -1,0 +1,74 @@
+<form action='/edituser/{{this.id}}'>
+	<div class='col-6'>
+		<div class='form-floating'>
+			<input
+				value='{{this.first_name}}'
+				name='first_name'
+				type='text'
+				class='form-control'
+				id='first_name'
+				placeholder='First Name'
+				required
+			/>
+			<label for='first_name'>First Name</label>
+		</div>
+	</div>
+	<div class='col-6'>
+		<div class='form-floating'>
+			<input
+				value='{{this.last_name}}'
+				name='last_name'
+				type='text'
+				class='form-control'
+				id='last_name'
+				placeholder='Last Name'
+				required
+			/>
+			<label for='last_name'>Last Name</label>
+		</div>
+	</div>
+	<div class='col-6'>
+		<div class='form-floating'>
+			<input
+				value='{{this.email}}'
+				name='email'
+				type='email'
+				class='form-control'
+				id='email'
+				placeholder='Email'
+				required
+			/>
+			<label for='email'>Email</label>
+		</div>
+	</div>
+	<div class='col-6'>
+		<div class='form-floating'>
+			<input
+				value='{{this.phone}}'
+				name='phone'
+				type='text'
+				class='form-control'
+				id='phone'
+				placeholder='Phone'
+				required
+			/>
+			<label for='phone'>Phone</label>
+		</div>
+	</div>
+	<div class='col-12'>
+		<div class='form-floating'>
+			<textarea
+				style='height: 200px;'
+				name='comments'
+				class='form-control'
+				id='comments'
+				placeholder='Comments'
+				required
+			>{{this.comments}}</textarea>
+			<label for='comments'>Comments</label>
+		</div>
+	</div>
+	<div class='col-12 d-grid'>
+		<button class='btn btn-primary' type='submit'>Submit</button>
+	</div>
+</form>

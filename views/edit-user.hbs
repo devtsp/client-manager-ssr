@@ -1,0 +1,19 @@
+<nav aria-label='breadcrumb'>
+	<ol class='breadcrumb'>
+		<li class='breadcrumb-item'><a href='/'>Home</a></li>
+		<li class='breadcrumb-item active' aria-current='edit user'>Edit User</li>
+	</ol>
+</nav>
+
+{{#if alert}}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  {{alert}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+{{#user}}
+<form action='/edituser/{{this.id}}' class='row g-3' method='POST'>
+  {{> edit-user-form}}
+</form>
+{{/user}}
