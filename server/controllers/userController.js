@@ -98,7 +98,9 @@ const remove = (req, res) => {
 		[req.params.id],
 		(err, rows) => {
 			if (!err) {
-				const removeSuccesMsg = encodeURIComponent('User removed succesfully');
+				const removeSuccesMsg = encodeURIComponent(
+					`User with id: ${req.params.id} removed succesfully`
+				);
 				res.redirect(`/?removed=${removeSuccesMsg}`);
 			} else {
 				console.log(err);
